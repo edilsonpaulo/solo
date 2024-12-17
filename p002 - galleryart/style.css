@@ -1,0 +1,225 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+:root{
+
+    --font-family: "Playfair Display", serif;
+    --fonta: "Montserrat", sans-serif;
+    --fontb: "Great Vibes", cursive;
+
+    --main-color: #FF6F61;
+    --colora: #7A7978;
+    --colorb: #B8D8D8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--colorb);
+}
+
+
+header{
+    background-color: var(--colorb);
+    color: #FF6F61;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: var(--fonta);
+    font-weight: normal;
+}
+
+
+.burger span{
+    width: 2px;
+    height: 20px;
+    background-color: #000;
+    margin: 4px;
+    display: inline-block;
+}
+
+section{
+    margin-top: 5rem;
+    padding: 20px;
+}
+
+.main-heading{
+    font-size: 3rem;
+    font-family: var(--font-family);
+    padding-bottom: 20px;
+    color: #000;
+}
+
+.primary-content{
+    line-height: 30px;
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+
+#gallery{
+    max-width: 1080px;
+    margin: auto;
+    font-family: sans-serif;
+    /* background-color: var(--main-color); */
+}
+
+#gallery h2{
+    font-size: 1.5rem;
+    border-left: 4px solid var(--main-color);
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+
+#gallery .img-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.img-container > div{
+    /* flex: 1; */
+    max-width: 400px;
+}
+
+.img-container div > img{
+    width: 100%;
+    border-radius: 6px;
+    padding-bottom: 10px;
+}
+
+.img-container div > p{
+    font-family: var(--fontb);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.section-three .main-heading{
+    font-size: 2rem;
+}
+
+.section-three .main-heading span{
+    color: var(--main-color);
+    font-size: 4rem;
+}
+
+.section-three .primary-content span{
+    background-color: #7A7978;
+    color: white;
+    padding: 5px 5px;
+    font-size: 1.1em;
+}
+
+.section-three .primary-content a{
+    text-decoration: none;
+    color: #be1f10ec;
+    transition: all .3s;
+}
+
+
+.section-three .primary-content a:hover{
+    text-decoration: underline;
+    /* color: #be1f10ec; */
+}
+
+
+
+.gallery-box{
+    max-width: 800px;
+    margin: 5rem auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap:70px;
+}
+
+.box-item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.box-item .box-content h2{
+    border-left: 4px solid var(--main-color);
+    padding-left: 5px;
+    font-family: var(--font-family);
+    margin-bottom: 10px;
+
+}
+
+.box-item .box-content p{
+    line-height: 30px;
+    text-align: left;
+
+}
+
+.box-img{
+    flex: 1;
+}
+
+.box-img img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    font-family: sans-serif;
+    background-color: #503b3aeb;
+}
+
+.logo-footer{
+    padding: 20px;
+}
+
+footer .logo-footer h1{
+    color: var(--colorb);
+    font-size: 3em;
+    padding-bottom: 10px;
+}
+
+footer .logo-footer p{
+    text-align: justify;
+    line-height: 30px;
+    width: 400px;
+}
+
+footer .company-about{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer .company-about h2{
+    color: var(--colorb);
+    padding-bottom: 20px;
+}
+
+footer .company-about p{
+    padding-bottom: 10px;
+}
+
+
+footer .copy-info{
+    width: 100%;
+    background-color: var(--colorb);
+    color: #000;
+    text-align: center;
+    padding: 5px 10px;
+}
